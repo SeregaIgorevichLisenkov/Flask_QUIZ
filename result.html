@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+        <title>Result</title>
+    </head>
+    <body>
+        <p class="title">Ваш результат: {{ score }} из {{ ready_answers }}!</p>
+        <p class="title">Хотите начать заново?</p>
+        <form>
+            <p class="button"><button><a href="http://127.0.0.1:5000/">Да!</a></button></p>
+        </form>
+    </body>
+</html>

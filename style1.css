@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.title {color: white;
+    font-size: 40px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;}
+
+.button {justify-self: center;
+    background-color: white;
+    border-radius: 150px;
+    align-items: center;}
+
+input, button {color: blueviolet;
+    background-color: white;}
+
+body {background-color: blueviolet;}

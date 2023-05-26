@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+        <title>Quiz</title>
+    </head>
+    <body>
+        <p class="title">Выберете викторину:</p>
+        <form method="post" action="/">
+            <p><select name="quiz">
+                {% for id, name in quizes %}
+                    <option value="{{ id }}">{{ name }}</option>
+                {% endfor %}
+            </select></p>
+            <p class="button"><input type="submit" value="Выбрать"></p>
+        </form>
+    </body>
+</html>
